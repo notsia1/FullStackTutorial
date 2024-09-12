@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello
+        <p id="Name-p"></p>! Welcome to my website.</h2>
+    </h2>
+    <button id="Log-out">LOG OUT</button>
+
+
+    <script src="login.js">
+            window.onload = function() {
+        if (!localStorage.getItem('authToken')) {
+        // If there is no auth token in localStorage, redirect to login page
+            window.location.href = 'login.html';
+        }
+
+    // Prevent going back to login page
+        history.pushState(null, null, window.location.href);
+        window.onpopstate = function () {
+        history.go(1);
+        };
+    };
+    
+    document.getElementById('Log-out').addEventListener('click', (event) => {
+        localStorage.removeItem('authToken');
+        window.location.href = 'login.html';
+    });
+
+    // Fetch user data from localStorage and display it
+    var authToken = localStorage.getItem('authToken');
+    var userData = JSON.parse(atob(authToken.split('.')[1]));
+
+
+    document.getElementById('Name-p').textContent = userData.name;
+
+
+
+
+
+    </script>
+</body>
+</html>

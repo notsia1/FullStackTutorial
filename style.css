@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: #000000;
+    font-weight: 300;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000aa;
+    background-position: center;
+    background-size: cover;
+}
+
+::selection{
+    background-color: #ffffff5d;
+    color: #fff;
+}
+
+.sign-section {
+    opacity: 50%;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 16px;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    background-color: #21212191;
+    box-shadow: 0px 0px 20px #0000005c;
+    transition: 0.4s ease-in-out;
+    padding: 20px 0px;
+}
+.sign-section:hover{
+    opacity: 100%;
+    border: 1px solid #ffffff1d;
+}
+
+.sign-section p {
+    opacity: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 15px;
+    color: #ffffff1d;
+    transition: 0.4s ease-in-out;
+}
+
+.sign-section p:hover{
+    opacity: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.sign-section .p a:hover{
+    box-shadow: 0px 0px 20px #000000;
+}
+
+
+
+.login-section{
+    opacity: 50%;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 16px;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    background-color: #21212191;
+    box-shadow: 0px 0px 20px #0000005c;
+    transition: 0.4s ease-in-out;
+    padding: 20px 0px;
+}
+
+.login-section:hover{
+    opacity: 100%;
+    border: 1px solid #ffffff1d;
+}
+
+.login-section h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.login-section p{
+    opacity: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 15px;
+    color: #ffffff1d;
+    transition: 0.4s ease-in-out;
+}
+
+.login-section p:hover{
+    opacity: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.login-section .p a:hover{
+    box-shadow: 0px 0px 20px #000000;
+}
+
+
+.input-section{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.input-section input{
+    opacity: 30%;
+    font-size: 16px;
+    width: 300px;
+    padding: 8px 10px ;
+    border-radius: 16px ;
+    border: 1px solid transparent;
+    background-color: #21212191;
+    margin: 4px;
+    box-shadow: 0px 0px 20px #0000003a;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+}
+
+.input-section input:hover{
+    opacity: 100%;
+    border: 1px solid #ffffff1d;
+}
+
+.input-section input:focus{
+    outline: none;
+    border: 1px solid #ffffff1d;
+}
+
+
+.input-section button{
+    opacity: 30%;
+    font-size: 16px;
+    width: 150px;
+    padding: 8px 10px ;
+    border-radius: 16px ;
+    border: 1px solid transparent;
+    background-color: #21212191;
+    margin: 4px;
+    box-shadow: 0px 0px 20px #0000003a;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+}
+
+
+.input-section button:hover{
+    opacity: 100%;
+    border: 1px solid #ffffff1d;
+    box-shadow: 0px 0px 30px #0000003a;
+    cursor: pointer;
+}
+
+.input-section button:active{
+    scale: 0.97;
+}
