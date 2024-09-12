@@ -1,0 +1,16 @@
+{
+  "name": "servertutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js"
+  },
+  "keywords": [],
+  "author": "notk@gmail.com",
+  "license": "ISC",
+  "description": "This is a tutorial for the backend development.",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
